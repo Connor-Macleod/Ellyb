@@ -92,7 +92,8 @@ local EditBoxWithPasteBufferMixin = {
 
 --- Reset paste buffer, to prepare for the next paste
 function EditBoxWithPasteBufferMixin:ResetPasteBuffer()
-	self.pastedTextBuffer, self.lastPaste = wipe(self.pastedTextBuffer); GetTime();
+	wipe(self.pastedTextBuffer)
+	self.lastPaste = GetTime();
 end
 
 --- Clear the buffer of the EditBox, save the pasted text to be retrieved via custom GetText()
