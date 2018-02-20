@@ -9,5 +9,7 @@
 	<Script file="SlashCommand.lua"/>
 	<Script file="GameEvents.lua"/>
 	<Script file="Unit.lua"/>
+	<Script file="DateTime.lua"/>
+	<Script file="DateManager.lua"/>
 
 </Ui>
